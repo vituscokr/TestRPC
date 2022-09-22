@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A960E82E28DC2499006CC4BC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A960E82D28DC2499006CC4BC /* Todo.swift */; };
+		A960E83028DC261A006CC4BC /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A960E82F28DC261A006CC4BC /* TodoModel.swift */; };
 		A99FA4B328DC064B00EF8DD9 /* TestRPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4B228DC064B00EF8DD9 /* TestRPCApp.swift */; };
 		A99FA4B528DC064B00EF8DD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4B428DC064B00EF8DD9 /* ContentView.swift */; };
 		A99FA4B728DC064C00EF8DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99FA4B628DC064C00EF8DD9 /* Assets.xcassets */; };
@@ -14,6 +16,11 @@
 		A99FA4C428DC064C00EF8DD9 /* TestRPCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4C328DC064C00EF8DD9 /* TestRPCTests.swift */; };
 		A99FA4CE28DC064C00EF8DD9 /* TestRPCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4CD28DC064C00EF8DD9 /* TestRPCUITests.swift */; };
 		A99FA4D028DC064C00EF8DD9 /* TestRPCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4CF28DC064C00EF8DD9 /* TestRPCUITestsLaunchTests.swift */; };
+		A99FA4DE28DC06F000EF8DD9 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = A99FA4DD28DC06F000EF8DD9 /* GRPC */; };
+		A99FA4E028DC070700EF8DD9 /* todo.proto in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4DF28DC070600EF8DD9 /* todo.proto */; };
+		A99FA4E228DC166300EF8DD9 /* todo.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4E128DC166300EF8DD9 /* todo.pb.swift */; };
+		A99FA4E428DC167400EF8DD9 /* todo.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4E328DC167400EF8DD9 /* todo.grpc.swift */; };
+		A99FA4E628DC16BA00EF8DD9 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA4E528DC16BA00EF8DD9 /* DataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A960E82D28DC2499006CC4BC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		A960E82F28DC261A006CC4BC /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		A99FA4AF28DC064B00EF8DD9 /* TestRPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99FA4B228DC064B00EF8DD9 /* TestRPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRPCApp.swift; sourceTree = "<group>"; };
 		A99FA4B428DC064B00EF8DD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,11 @@
 		A99FA4C928DC064C00EF8DD9 /* TestRPCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRPCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99FA4CD28DC064C00EF8DD9 /* TestRPCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRPCUITests.swift; sourceTree = "<group>"; };
 		A99FA4CF28DC064C00EF8DD9 /* TestRPCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRPCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A99FA4DF28DC070600EF8DD9 /* todo.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = todo.proto; sourceTree = "<group>"; };
+		A99FA4E128DC166300EF8DD9 /* todo.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todo.pb.swift; sourceTree = "<group>"; };
+		A99FA4E328DC167400EF8DD9 /* todo.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todo.grpc.swift; sourceTree = "<group>"; };
+		A99FA4E528DC16BA00EF8DD9 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		A99FA4E728DC237800EF8DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99FA4DE28DC06F000EF8DD9 /* GRPC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +109,16 @@
 		A99FA4B128DC064B00EF8DD9 /* TestRPC */ = {
 			isa = PBXGroup;
 			children = (
+				A99FA4E828DC243800EF8DD9 /* Models */,
+				A99FA4E728DC237800EF8DD9 /* Info.plist */,
+				A99FA4DF28DC070600EF8DD9 /* todo.proto */,
+				A99FA4E128DC166300EF8DD9 /* todo.pb.swift */,
+				A99FA4E328DC167400EF8DD9 /* todo.grpc.swift */,
 				A99FA4B228DC064B00EF8DD9 /* TestRPCApp.swift */,
 				A99FA4B428DC064B00EF8DD9 /* ContentView.swift */,
 				A99FA4B628DC064C00EF8DD9 /* Assets.xcassets */,
 				A99FA4B828DC064C00EF8DD9 /* Preview Content */,
+				A99FA4E528DC16BA00EF8DD9 /* DataRepository.swift */,
 			);
 			path = TestRPC;
 			sourceTree = "<group>";
@@ -127,6 +148,15 @@
 			path = TestRPCUITests;
 			sourceTree = "<group>";
 		};
+		A99FA4E828DC243800EF8DD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A960E82D28DC2499006CC4BC /* Todo.swift */,
+				A960E82F28DC261A006CC4BC /* TodoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +173,9 @@
 			dependencies = (
 			);
 			name = TestRPC;
+			packageProductDependencies = (
+				A99FA4DD28DC06F000EF8DD9 /* GRPC */,
+			);
 			productName = TestRPC;
 			productReference = A99FA4AF28DC064B00EF8DD9 /* TestRPC.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +248,9 @@
 				Base,
 			);
 			mainGroup = A99FA4A628DC064B00EF8DD9;
+			packageReferences = (
+				A99FA4DC28DC06F000EF8DD9 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
 			productRefGroup = A99FA4B028DC064B00EF8DD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A960E82E28DC2499006CC4BC /* Todo.swift in Sources */,
+				A960E83028DC261A006CC4BC /* TodoModel.swift in Sources */,
 				A99FA4B528DC064B00EF8DD9 /* ContentView.swift in Sources */,
 				A99FA4B328DC064B00EF8DD9 /* TestRPCApp.swift in Sources */,
+				A99FA4E228DC166300EF8DD9 /* todo.pb.swift in Sources */,
+				A99FA4E628DC16BA00EF8DD9 /* DataRepository.swift in Sources */,
+				A99FA4E428DC167400EF8DD9 /* todo.grpc.swift in Sources */,
+				A99FA4E028DC070700EF8DD9 /* todo.proto in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +462,7 @@
 				DEVELOPMENT_TEAM = FP29HYJY6Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestRPC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +492,7 @@
 				DEVELOPMENT_TEAM = FP29HYJY6Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestRPC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +627,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A99FA4DC28DC06F000EF8DD9 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A99FA4DD28DC06F000EF8DD9 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A99FA4DC28DC06F000EF8DD9 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A99FA4A728DC064B00EF8DD9 /* Project object */;
 }
